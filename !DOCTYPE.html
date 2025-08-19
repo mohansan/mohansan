@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhoti and Shirt Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Dhoti and Shirt Details Form</h2>
+<form action="#" method="post" enctype="multipart/form-data">
+    <!-- Product Details -->
+    <label for="product-name">Product Name</label>
+    <input type="text" id="product-name" name="product-name" placeholder="Enter product name" required>
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" rows="4" placeholder="Enter product description"></textarea>
+
+    <!-- Shirt Size -->
+    <label for="shirt-size">Shirt Size</label>
+    <select id="shirt-size" name="shirt-size">
+        <option value="">Select Shirt Size</option>
+        <option value="S">Small (S)</option>
+        <option value="M">Medium (M)</option>
+        <option value="L">Large (L)</option>
+        <option value="XL">Extra Large (XL)</option>
+        <option value="XXL">Double Extra Large (XXL)</option>
+    </select>
+
+    <!-- Dhoti Size -->
+    <label for="dhoti-size">Dhoti Size</label>
+    <select id="dhoti-size" name="dhoti-size">
+        <option value="">Select Dhoti Size</option>
+        <option value="2">2 meters</option>
+        <option value="2.5">2.5 meters</option>
+        <option value="3">3 meters</option>
+        <option value="4">4 meters</option>
+    </select>
+
+    <!-- Upload Photos -->
+    <label for="photos">Upload Photos</label>
+    <input type="file" id="photos" name="photos" accept="image/*" multiple>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
