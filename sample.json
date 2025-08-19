@@ -1,0 +1,27 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "designation": "Software Engineer",
+            "email": "john.doe@example.com"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "designation": "Product Manager",
+            "email": "jane.smith@example.com"
+        },
+        {
+            "id": 3,
+            "name": "Mike Johnson",
+            "designation": "UI/UX Designer",
+            "email": "mike.johnson@example.com"
+        }
+    ],
+    "company": {
+        "name": "Tech Solutions",
+        "location": "New York",
+        "founded": 2010
+    }
+}
